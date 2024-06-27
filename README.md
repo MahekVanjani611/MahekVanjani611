@@ -1,23 +1,26 @@
 <h1 align="center">Hi 👋, I'm Mahek Vanjani</h1>
 <h3 align="center">A passionate Electrical Engineering student from IIT Jodhpur.</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mahekvanjani611" alt="mahekvanjani611" /></a> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=mahekvanjani611&label=Profile%20views&color=0e75b6&style=flat" alt="mahekvanjani611" /> </p>
 
-- 🔭 I’m currently working on [AI enabled speech and text translation.](https://github.com/MahekVanjani611/AI_enabled_speech_text_translation-software)
+- 🔭 I’m currently working on [Fine_Tuning a Language Model for Question Answering](https://github.com/MahekVanjani611/AI_enabled_speech_text_translation-software)
 
 - 🌱 I’m currently learning **LLMs,LMMs,Machine Translation,Langchain and API calls.**
 
+- 👨‍💻 All of my projects are available at [https://mahekvanjani6112024.netlify.app/](https://mahekvanjani6112024.netlify.app/)
+
 - 📫 How to reach me **b22ee088@iitj.ac.in**
 
-- 📄 Know about my experiences [resume](https://drive.google.com/file/d/1rTafMgfthY9A178YAj9egPGY9YqNRSQl/view)
+- 📄 Know about my experiences [https://drive.google.com/file/d/1rTafMgfthY9A178YAj9egPGY9YqNRSQl/view](https://drive.google.com/file/d/1rTafMgfthY9A178YAj9egPGY9YqNRSQl/view)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://www.linkedin.com/in/mahek-vanjani-93477a253/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="mahek vanjani" height="30" width="40" /></a>
-<a href="https://www.kaggle.com/mahekvanjani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="mahek vanjani" height="30" width="40" /></a>
-<a href="https://www.youtube.com/channel/UC5ZzO8gFCfh8J2dQDqHtmOA" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="mahek" height="30" width="40" /></a>
-
-
+<a href="https://linkedin.com/in/mahek vanjani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="mahek vanjani" height="30" width="40" /></a>
+<a href="https://kaggle.com/mahek vanjani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="mahek vanjani" height="30" width="40" /></a>
+<a href="https://fb.com/mahek vanjani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="mahek vanjani" height="30" width="40" /></a>
+<a href="https://www.youtube.com/c/mahek" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="mahek" height="30" width="40" /></a>
+<a href="https://codeforces.com/profile/mahekv6" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="mahekv6" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/mahekvanjani06" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="mahekvanjani06" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
@@ -26,6 +29,5 @@
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mahekvanjani611&show_icons=true&locale=en&layout=compact" alt="mahekvanjani611" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mahekvanjani611&show_icons=true&locale=en" alt="mahekvanjani611" /></p>
-
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mahekvanjani611&" alt="mahekvanjani611" /></p>
