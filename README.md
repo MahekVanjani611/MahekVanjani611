@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **b22ee088@iitj.ac.in**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1rTafMgfthY9A178YAj9egPGY9YqNRSQl/view](https://drive.google.com/file/d/1rTafMgfthY9A178YAj9egPGY9YqNRSQl/view)
+- 📄 Know about my experiences [Resume](https://drive.google.com/file/d/10F5N3U0MvUhjI_zlas32_8uv2OLxzrqV/view?usp=sharing)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
