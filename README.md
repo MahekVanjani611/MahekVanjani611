@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Mahek Vanjani</h1>
-<h3 align="center">A passionate Electrical Engineering student from IIT Jodhpur.</h3>
+<h3 align="center">A passionate Problem Solver from IIT Jodhpur.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mahekvanjani611&label=Profile%20views&color=0e75b6&style=flat" alt="mahekvanjani611" /> </p>
 
