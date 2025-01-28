@@ -18,6 +18,9 @@ jobs:
       - name: Generate stats
         run: echo "![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahekVanjani611&show_icons=true)" >> README.md
 
+      - name: Snakes
+        run: echo "![Generate Snakes](https://raw.githubusercontent.com/MahekVanjani611/MahekVanjani611/output/github-contribution-grid-snake.svg)
+
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions Bot"
