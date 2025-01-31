@@ -92,3 +92,5 @@
 <p align="center">
   <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mahekvanjani611&" alt="mahekvanjani611" />
 </p>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahekVanjani611&show_icons=true)
+![Generate Snakes](https://raw.githubusercontent.com/MahekVanjani611/MahekVanjani611/output/github-contribution-grid-snake.svg)
