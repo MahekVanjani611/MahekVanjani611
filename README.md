@@ -120,3 +120,5 @@
 ![Generate Snakes](https://raw.githubusercontent.com/MahekVanjani611/MahekVanjani611/output/github-contribution-grid-snake.svg)
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahekVanjani611&show_icons=true)
 ![Generate Snakes](https://raw.githubusercontent.com/MahekVanjani611/MahekVanjani611/output/github-contribution-grid-snake.svg)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahekVanjani611&show_icons=true)
+![Generate Snakes](https://raw.githubusercontent.com/MahekVanjani611/MahekVanjani611/output/github-contribution-grid-snake.svg)
