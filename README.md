@@ -89,6 +89,4 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=mahekvanjani611&show_icons=true&locale=en" alt="GitHub Stats" />
 </p>
 
-<p align="center">
-  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mahekvanjani611" alt="GitHub Streak Stats" />
-</p>
+
