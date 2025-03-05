@@ -19,7 +19,7 @@ jobs:
       - name: Update GitHub Stats
         uses: anmol098/waka-readme-stats@master
         with:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.WAKATIME_GITHUB_TOKEN }}  # Use the new token
           SHOW_LINES_OF_CODE: "True"
           SHOW_PROFILE_VIEWS: "True"
 
@@ -28,10 +28,10 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}  # Default token is fine for metrics
           base: ""
-          plugin_quotes: yes  # Enables the quotes plugin
-          plugin_quotes_category: "inspiration"  # Fetches daily inspirational quotes
+          plugin_quotes: yes
+          plugin_quotes_category: "inspiration"
 
       # Step 3: Commit and Push Changes
       - name: Commit and Push Changes
