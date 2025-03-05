@@ -6,7 +6,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # Allows manual triggering from GitHub Actions
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions
 
 jobs:
   update-readme:
@@ -19,23 +19,25 @@ jobs:
       - name: Update GitHub Stats
         uses: anmol098/waka-readme-stats@master
         with:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Uses GitHub’s built-in token
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SHOW_LINES_OF_CODE: "True"
           SHOW_PROFILE_VIEWS: "True"
 
-      # Step 2: Add Daily Inspirational Quotes to README
-      - name: Add Daily Quote
-        uses: jasonelle/dynamic-quotes@main
+      # Step 2: Add Daily Inspirational Quote using Metrics
+      - name: Generate GitHub Metrics with Quotes
+        uses: lowlighter/metrics@latest
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Authorization for updating README
-          QUOTE_LANGUAGE: "en"  # Language of quotes (English)
-          QUOTE_CATEGORY: "inspiration"  # Category of quotes
+          filename: metrics.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_quotes: yes  # Enables the quotes plugin
+          plugin_quotes_category: "inspiration"  # Fetches daily inspirational quotes
 
       # Step 3: Commit and Push Changes
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add README.md
+          git add README.md metrics.svg
           git commit -m "Updated README with new stats and daily quote" || echo "No changes to commit"
           git push origin main
