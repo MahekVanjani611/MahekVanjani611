@@ -1,0 +1,41 @@
+name: Update GitHub Profile README
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Runs daily at midnight UTC
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Allows manual triggering from GitHub Actions
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 1: Update GitHub Stats in README
+      - name: Update GitHub Stats
+        uses: anmol098/waka-readme-stats@master
+        with:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Uses GitHub’s built-in token
+          SHOW_LINES_OF_CODE: "True"
+          SHOW_PROFILE_VIEWS: "True"
+
+      # Step 2: Add Daily Inspirational Quotes to README
+      - name: Add Daily Quote
+        uses: jasonelle/dynamic-quotes@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Authorization for updating README
+          QUOTE_LANGUAGE: "en"  # Language of quotes (English)
+          QUOTE_CATEGORY: "inspiration"  # Category of quotes
+
+      # Step 3: Commit and Push Changes
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Updated README with new stats and daily quote" || echo "No changes to commit"
+          git push origin main
