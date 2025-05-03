@@ -53,9 +53,9 @@
 <h3 align="left">Stats and Contributions:</h3>
 
 <!--START_SECTION:stats-->
-<!-- GitHub stats will be inserted here automatically by GitHub Actions -->
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahekVanjani611&show_icons=true)
 <!--END_SECTION:stats-->
 
 <!--START_SECTION:snake-->
-<!-- Snake animation will be inserted here automatically by GitHub Actions -->
+![Generate Snakes](https://raw.githubusercontent.com/MahekVanjani611/MahekVanjani611/output/github-contribution-grid-snake.svg)
 <!--END_SECTION:snake-->
