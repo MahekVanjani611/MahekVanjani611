@@ -1,31 +1,53 @@
-name: Update Profile
+name: Generate Snake and Update Profile
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily
-  workflow_dispatch: # Manual trigger
+    - cron: "0 0 * * *"  # Runs daily
+  workflow_dispatch:
+  push:
+    branches:
+      - main  # Change if your default branch is not 'main'
 
 permissions:
-  contents: write  # ✅ Grants write permissions to GITHUB_TOKEN
+  contents: write  # ✅ Required to push changes
 
 jobs:
-  update-profile:
+  build:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
-      - name: Generate stats
-        run: echo "![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahekVanjani611&show_icons=true)" >> README.md
+      # Generate snake animation SVGs
+      - name: Generate GitHub Contribution Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: MahekVanjani611
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Add Snakes to README
-        run: echo "![Generate Snakes](https://raw.githubusercontent.com/MahekVanjani611/MahekVanjani611/output/github-contribution-grid-snake.svg)" >> README.md
+      # Insert GitHub stats into README.md
+      - name: Insert GitHub Stats
+        run: |
+          STATS='![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MahekVanjani611&show_icons=true)'
+          sed -i "/<!--START_SECTION:stats-->/,/<!--END_SECTION:stats-->/c\<!--START_SECTION:stats-->\n$STATS\n<!--END_SECTION:stats-->" README.md
 
-      - name: Commit and push changes
+      # Insert snake SVG into README.md
+      - name: Insert Snake Animation
+        run: |
+          SNAKE='![Generate Snakes](https://raw.githubusercontent.com/MahekVanjani611/MahekVanjani611/output/github-contribution-grid-snake.svg)'
+          sed -i "/<!--START_SECTION:snake-->/,/<!--END_SECTION:snake-->/c\<!--START_SECTION:snake-->\n$SNAKE\n<!--END_SECTION:snake-->" README.md
+
+      # Commit and push changes
+      - name: Commit and Push
         run: |
           git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
-          git add README.md
-          git commit -m "Update dynamic content" || echo "No changes to commit"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md dist/
+          git commit -m "Update README and snake animation" || echo "No changes to commit"
           git push
